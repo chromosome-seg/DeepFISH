@@ -45,7 +45,7 @@ The latter deep-learning framework is supposed to be more efficient than the seg
 * [Enet + torch + lua](https://github.com/e-lab/ENet-training).
 
 ### Datasets:
-   * ** Raw Images** : set of 15 multispectral raw images (DAPI,Cy3,Cy5) of human lymphocytes chromosomes (12 bits tiff).
+   * **Raw Images** : set of 15 multispectral raw images (DAPI,Cy3,Cy5) of human lymphocytes chromosomes (12 bits tiff).
    * **DAPI.tif and Cy3.tif** : 12 bits images of metaphasic chromosomes. The telomeres marking the end of the chromosomes are visible in the Cy3.tif image.The metaphase doesn't contain overlapping chromosomes (metaphase 3)
    * **LowRes train directory** : more than 100 000 pairs (grey+groundtruth label) of low resolution images of overlapping chromosomes
    * **LowRes validation directory** : more than 100 000 pairs (grey+groundtruth label) of low resolution images of overlapping chromosomes
