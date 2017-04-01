@@ -1,7 +1,7 @@
 jpp21 chromosomal preparations from male human lymphocytes (Jean-Patrick Pommier,unpublished results). Chromosomes were hybridized with a mix of telomeric PNA probe plus additionnal probes:
 
 cy3 : (CCCTAA)3-pna probe
-cy5 : additional oligo DNAprobe yielding a weak fluorescent signalon chromosomes 9.
+cy5 : additional oligo DNAprobe yielding a weak fluorescent signal on chromosomes 9 and heterochromatin of other chromosomes
 fitc : oligo dna probe (fails)
 DAPI : stains chromosomes.
 

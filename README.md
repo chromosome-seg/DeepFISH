@@ -44,9 +44,11 @@ The latter deep-learning framework is supposed to be more efficient than the seg
 
 * [Enet + torch + lua](https://github.com/e-lab/ENet-training).
 
-### Dataset
-   * **DAPI.tif and Cy3.tif** : 12 bits images of metaphasic chromosomes. The telomeres marking the end of the chromosomes are visible in the Cy3.tif image.The metaphase doesn't contain overlapping chromosomes.
-   * **lowres_82146_overlapping_pairs_grey_DAPI-GroundTruth.h5** : 82146 pairs of low resolution (decreased by 4: the overlapping were generated from a DAPI image 16 times smaller than the original image).
+### Datasets:
+   * **Raw Images** : set of 15 multispectral raw images (DAPI,Cy3,Cy5) of human lymphocytes chromosomes (12 bits tiff).
+   * **DAPI.tif and Cy3.tif** : 12 bits images of metaphasic chromosomes. The telomeres marking the end of the chromosomes are visible in the Cy3.tif image.The metaphase doesn't contain overlapping chromosomes (metaphase 3)
+   * **LowRes train directory** : more than 100 000 pairs (grey+groundtruth label) of low resolution images of overlapping chromosomes
+   * **LowRes validation directory** : more than 100 000 pairs (grey+groundtruth label) of low resolution images of overlapping chromosomes
 
-   * **LowRes_13434_overlapping_pairs.h5** : 13434 pairs of overlapping chromosomes generated from the two previous images. This dataset is intended to train a supervised learning algorithm to resolve overlapping chromosomes. The dataset is stored as a numpy array and saved in a hdf5 file. Compared to the DAPI and Cy3 images,the resolution was decreased by two.
-   * **overlapping_chromosomes_examples.h5**: smaller dataset (~2000 images). The resolution of the images is the same than the DAPI/Cy3 images.
+   * **FullRes train** : more power, why not trying to train a neural network on full resolution images (~100 000 pairs of grey+grountruth images)
+   * **FullRes validation** : ~50 000 pairs of grey+groundtruth images to check the training
